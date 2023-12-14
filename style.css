@@ -25,15 +25,83 @@ button {
   margin-top: 60px;
 }
 
-img {
-  max-width: 200px;
-}
+
 
 nav {
   display: none;
 }
 
+/*--CARDS DEFAULTS---*/
+.cards {
+  position: absolute;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: center;
+  top: 208.3vh;
+  left: 50vw;
+  transform: translate(-50%,-50%);
+}
+
+.card {
+  flex: 0 0 250px;
+  background-color: #f2f2f2;
+  margin: 15px;
+  border-radius: 7px;
+  padding: 0 0 50px 0;
+  height: 300px;
+  max-width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.3), 2px 3px 7px 0 rgba(0, 0, 0, 0.3);
+  
+}
+
+.card h3{
+  font-size: 1rem;
+}
+
+.card p {
+  font-size: 0.7rem;
+  padding: 20px 10px;
+  text-align: center;
+}
+
+.img-container{
+  position: relative;
+  max-height: 150px;
+  min-height: 150px;
+  border-radius: 7px;
+  width: 230px;
+  transform-origin: 4rem;
+  top: -8%;
+  overflow: hidden;
+}
+
+img {
+  position: relative;
+  max-width: 165px;
+  height: 165px;
+  left: 50%;
+  transform: translate(-50%,7%);
+  
+}
+
+.img-card-adult{
+  height: 400px;
+  transform: translate(-50%,5%);
+}
+
+.img-card-old{
+  height: 340px;
+  transform: translate(-50%,10%);
+}
+
+
 /*--- DESKTOP--- */
+
 @media screen and (min-width: 768px) {
   /* --- HEADER SECITON*/
   .header-grid {
@@ -77,7 +145,7 @@ nav {
   ul > li {
     display: inline-block;
     list-style: none;
-    padding: 30px 6vw;
+    padding: 3vh 6vw;
   }
 
   /*-----MAIN CONTENT-----*/
@@ -86,10 +154,7 @@ nav {
   }
 
  .cards{
-    position: relative;
-    top: 25%;
-    left: 50%;
-    /* transform: translate(-50%,-50%); */
+    
   }
 
   .main-content {
@@ -187,6 +252,7 @@ p,
 a,
 button {
   font-family: "Fira Sans", sans-serif;
+  font-size: 2.3vh;
 }
 
 .header-a p {
