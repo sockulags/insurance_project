@@ -5,6 +5,7 @@
 /* --- DEFAULT SETTINGS ---  */
 body {
   background-color: #ebebeb;
+  min-width: 100vw;
 }
 
 .content-area {
@@ -20,12 +21,11 @@ button {
   width: 150px;
   border-radius: 40px;
   background-color: white;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 0.8rem;
   margin-top: 60px;
+  box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.1), 2px 3px 7px 0 rgba(0, 0, 0, 0.1);
 }
-
-
 
 nav {
   display: none;
@@ -36,30 +36,27 @@ nav {
   position: absolute;
   display: flex;
   flex-wrap: nowrap;
-  justify-content: center;
-  align-content: center;
-  top: 208.3vh;
+  top: 190vh;
   left: 50vw;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
 }
 
 .card {
   flex: 0 0 250px;
   background-color: #f2f2f2;
-  margin: 15px;
+  margin: 3vw;
   border-radius: 7px;
-  padding: 0 0 50px 0;
+  padding: 0 25px;
   height: 300px;
   max-width: 250px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.3), 2px 3px 7px 0 rgba(0, 0, 0, 0.3);
-  
+  box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.1), 2px 3px 7px 0 rgba(0, 0, 0, 0.1);
 }
 
-.card h3{
+.card h3 {
   font-size: 1rem;
 }
 
@@ -69,9 +66,9 @@ nav {
   text-align: center;
 }
 
-.img-container{
+.img-container {
   position: relative;
-  max-height: 150px;
+  height: 150px;
   min-height: 150px;
   border-radius: 7px;
   width: 230px;
@@ -85,20 +82,18 @@ img {
   max-width: 165px;
   height: 165px;
   left: 50%;
-  transform: translate(-50%,7%);
-  
+  transform: translate(-50%, 7%);
 }
 
-.img-card-adult{
+.img-card-adult {
   height: 400px;
-  transform: translate(-50%,5%);
+  transform: translate(-50%, 5%);
 }
 
-.img-card-old{
+.img-card-old {
   height: 340px;
-  transform: translate(-50%,10%);
+  transform: translate(-50%, 10%);
 }
-
 
 /*--- DESKTOP--- */
 
@@ -109,7 +104,7 @@ img {
     grid-template-areas:
       "a b"
       "a c";
-    height: 100vh;
+    height: 91.7vh;
   }
 
   .container {
@@ -150,19 +145,17 @@ img {
 
   /*-----MAIN CONTENT-----*/
   main {
-    height: 200vh;
+    height: 180vh;
   }
 
- .cards{
-    
+  .cards {
   }
 
   .main-content {
-    height: 100vh;
-    
+    height: 90vh;
   }
 
-  .main-content h2{
+  .main-content h2 {
     font-size: 2.5rem;
   }
 
@@ -171,45 +164,80 @@ img {
     grid-template-areas:
       "a b"
       "c b";
-      justify-content: center;
-      align-content: flex-start;
-      padding-top:150px;  
+    justify-content: space-evenly;
+    align-content: flex-start;
+    padding-top: 110px;
   }
 
-  .safety h2{
+  .safety h2 {
     grid-area: a;
-   
-    margin-right: 75px;
+    margin-right: 13vw;
   }
 
-  .safety p{
-    grid-area: b; 
-    margin-right: 75px;
+  .safety p {
+    grid-area: b;
+    margin-right: 0px;
+    
+    line-height: 1.6rem;
   }
-  .safety button{
+  .safety button {
+   
     grid-area: c;
   }
 
-  .about{
-    display:flex;
+  .about {
+    display: flex;
     flex-wrap: wrap;
     align-content: flex-end;
-    padding-bottom: 150px;
+    padding-bottom: 80px;
   }
 
-  .container-big{
-    width:550px;
+  .container-big {
+    width: 550px;
     text-align: center;
   }
 
-  .container-big p{
+  .container-big p {
     padding: 20px;
   }
-  .container-big h2{
-    padding-bottom: 30px;
-  }  
+  .container-big h2 {
+    padding-bottom: 15px;
+  }
+  /*---SECTION: HOW IT WORKS----*/
+  .how {
+    display: grid; 
+    height: 100vh;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2,1fr);
+  }
 
-  
+  .how div{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .how div h2{
+  color: #000000;
+  font-size: 3rem;
+  }
+
+  .how div h3{
+position: absolute;
+top: 10%;
+left: 10%;
+color: rgba(0,0,0,0.5);
+font-size: 2.2rem;
+  }
+
+  .how div p{
+    max-width: 79%;
+    font-size: 1.4rem;
+    font-weight: 500;
+    opacity: 0.7;
+  }
 }
 
 /*-----BACKGROUND COLORS ON ELEMENTS------ */
@@ -227,6 +255,14 @@ img {
 
 .bg-gray {
   background-color: #a9a19e;
+}
+
+.bg-light-gray{
+  background-color: #ebebeb;
+}
+
+.bg-white {
+  background-color: #ffffff;
 }
 
 /*-----FONT STYLES-----*/
@@ -249,8 +285,7 @@ h2 {
 }
 
 p,
-a,
-button {
+a {
   font-family: "Fira Sans", sans-serif;
   font-size: 2.3vh;
 }
