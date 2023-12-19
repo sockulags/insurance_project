@@ -34,45 +34,45 @@ nav {
 
 /*--CARDS DEFAULTS---*/
 .cards {
-  position: absolute;
   display: flex;
-  flex-wrap: nowrap;
-  top: 190vh;
-  left: 50vw;
-  transform: translate(-50%, -50%);
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px;
 }
 
 .card {
-  flex: 0 0 250px;
+  flex: 0 0 350px;
   background-color: #f2f2f2;
-  margin: 3vw;
+  margin: 50px;
   border-radius: 7px;
-  padding: 0 25px;
-  height: 300px;
-  max-width: 250px;
+  padding: 0 5px;
+  height: 420px;
+  max-width: 350px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.1), 2px 3px 7px 0 rgba(0, 0, 0, 0.1);
 }
 
 .card h3 {
-  font-size: 1rem;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
 }
 
 .card p {
-  font-size: 0.7rem;
-  padding: 20px 10px;
+  font-size: 0.9rem;
+  padding: 2px 20px;
   text-align: center;
 }
 
 .img-container {
   position: relative;
-  height: 150px;
+  height: 230px;
   min-height: 150px;
   border-radius: 7px;
-  width: 230px;
+  width: 330px;
   transform-origin: 4rem;
   top: -8%;
   overflow: hidden;
@@ -80,29 +80,29 @@ nav {
 
 img {
   position: relative;
-  max-width: 165px;
-  height: 165px;
+  max-width: 350px;
+  height: 270px;
   left: 50%;
   transform: translate(-50%, 7%);
 }
 
 .img-card-adult {
-  height: 400px;
-  transform: translate(-50%, 5%);
+  height: 550px;
+  transform: translate(-50%, 9%);
 }
 
 .img-card-old {
-  height: 340px;
-  transform: translate(-50%, 10%);
+  height: 550px;
+  transform: translate(-50%, 8%);
 }
-.bottom-bar{
+.bottom-bar {
   display: flex;
   height: 50px;
   align-items: center;
   justify-content: center;
 }
 
-.bottom-bar a{
+.bottom-bar a {
   font-size: 20px;
 }
 /* MOBILE HEADER AREA*/
@@ -122,7 +122,6 @@ img {
   background-repeat: no-repeat;
   background-position: right 20px bottom;
   padding-bottom: 200px;
-  
 
   padding-left: 10px;
   height: 100vh;
@@ -144,8 +143,8 @@ img {
   font-size: 1.3rem;
 }
 
-.header-a h1{
-font-size: 4rem;
+.header-a h1 {
+  font-size: 4rem;
 }
 
 .header-b p,
@@ -155,7 +154,97 @@ font-size: 4rem;
   opacity: 0.7;
 }
 
+/*---MAIN AREA --- */
+.main-content h2 {
+  font-size: 2.5rem;
+}
 
+.safety {
+  display: flex;
+  flex-direction: column;
+  padding: 60px 20px 0 20px;
+}
+
+.safety h2 {
+  font-size: 2.8rem;
+  margin-bottom: 30px;
+}
+
+.safety p {
+  line-height: 2rem;
+  font-weight: 500;
+  opacity: 0.8;
+}
+
+.safety .card p {
+  color: #7c7c7c;
+  line-height: 1.2rem;
+  font-weight: 500;
+  opacity: 0.8;
+
+}
+.safety button {
+}
+
+.main-btn {
+  display: none;
+}
+
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-end;
+  padding: 50px 70px;
+}
+
+.container-big {
+  width: 550px;
+  text-align: center;
+}
+
+.container-big p {
+  padding: 20px;
+}
+.container-big h2 {
+  padding-bottom: 15px;
+}
+
+/*--HOW IT WORKS --- */
+.how {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.how div {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 33vh;
+  width: 100%;
+}
+
+.how div h2 {
+  color: #000000;
+  font-size: 4rem;
+}
+
+.how div h3 {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 2.5rem;
+}
+
+.how div p {
+  max-width: 79%;
+  font-size: 1.7rem;
+  font-weight: 500;
+  opacity: 0.7;
+}
 
 /*--- DESKTOP--- */
 
@@ -170,7 +259,7 @@ font-size: 4rem;
   }
 
   .container {
-    width: 300px;
+    width: 400px;
   }
 
   .header-a {
@@ -196,7 +285,7 @@ font-size: 4rem;
   .header-a p {
     line-height: 1.8rem;
   }
-  
+
   .header-b p,
   .header-c p {
     font-size: 0.8rem;
@@ -219,9 +308,6 @@ font-size: 4rem;
   /*-----MAIN CONTENT-----*/
   main {
     height: 180vh;
-  }
-
-  .cards {
   }
 
   .main-content {
@@ -250,12 +336,14 @@ font-size: 4rem;
   .safety p {
     grid-area: b;
     margin-right: 0px;
-    
+
     line-height: 1.6rem;
   }
   .safety button {
-   
     grid-area: c;
+  }
+  .main-btn {
+    display: block;
   }
 
   .about {
@@ -276,36 +364,58 @@ font-size: 4rem;
   .container-big h2 {
     padding-bottom: 15px;
   }
-  /*---SECTION: HOW IT WORKS----*/
-  .how {
-    display: grid; 
-    height: 100vh;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2,1fr);
+
+  .cards {
+    position: absolute;
+    display: flex;
+    flex-wrap: nowrap;
+    max-width: 100vw;
+    top: 190vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
   }
 
-  .how div{
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+        box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.1),
+      2px 3px 7px 0 rgba(0, 0, 0, 0.1);
+  }
+  /*---SECTION: HOW IT WORKS----*/
+  .how {
+    display: grid;
+    max-height: 100vh;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .how div {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+    height: 30vw;
+    max-height: 50vh;
   }
 
-  .how div h2{
-  color: #000000;
-  font-size: 3rem;
+  .how div h2 {
+    color: #000000;
+    font-size: 3rem;
   }
 
-  .how div h3{
-position: absolute;
-top: 10%;
-left: 10%;
-color: rgba(0,0,0,0.5);
-font-size: 2.2rem;
+  .how div h3 {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 2.2rem;
   }
 
-  .how div p{
+  .how div p {
     max-width: 79%;
     font-size: 1.4rem;
     font-weight: 500;
@@ -330,7 +440,7 @@ font-size: 2.2rem;
   background-color: #a9a19e;
 }
 
-.bg-light-gray{
+.bg-light-gray {
   background-color: #ebebeb;
 }
 
@@ -362,8 +472,6 @@ a {
   font-family: "Fira Sans", sans-serif;
   font-size: 2.3vh;
 }
-
-
 
 .white-text {
   color: white;
