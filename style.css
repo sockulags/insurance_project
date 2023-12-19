@@ -105,6 +105,57 @@ img {
 .bottom-bar a{
   font-size: 20px;
 }
+/* MOBILE HEADER AREA*/
+.header-grid {
+  display: grid;
+  grid-template-areas:
+    "a"
+    "a"
+    "b"
+    "c";
+  height: 200vh;
+}
+.header-a {
+  grid-area: a;
+  background-image: url("./img/family.png");
+  background-size: 52vh;
+  background-repeat: no-repeat;
+  background-position: right 20px bottom;
+  padding-bottom: 200px;
+  
+
+  padding-left: 10px;
+  height: 100vh;
+}
+
+.header-b {
+  grid-area: b;
+  text-align: center;
+  height: 50vh;
+}
+.header-c {
+  grid-area: c;
+  text-align: center;
+  height: 50vh;
+}
+
+.header-a p {
+  line-height: 2rem;
+  font-size: 1.3rem;
+}
+
+.header-a h1{
+font-size: 4rem;
+}
+
+.header-b p,
+.header-c p {
+  font-size: 0.8rem;
+  font-weight: 500;
+  opacity: 0.7;
+}
+
+
 
 /*--- DESKTOP--- */
 
@@ -140,6 +191,17 @@ img {
   .header-c {
     grid-area: c;
     text-align: center;
+  }
+
+  .header-a p {
+    line-height: 1.8rem;
+  }
+  
+  .header-b p,
+  .header-c p {
+    font-size: 0.8rem;
+    font-weight: 500;
+    opacity: 0.7;
   }
 
   /*----- NAVBAR-------*/
@@ -301,16 +363,7 @@ a {
   font-size: 2.3vh;
 }
 
-.header-a p {
-  line-height: 1.8rem;
-}
 
-.header-b p,
-.header-c p {
-  font-size: 0.8rem;
-  font-weight: 500;
-  opacity: 0.7;
-}
 
 .white-text {
   color: white;
