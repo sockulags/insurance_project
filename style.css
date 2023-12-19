@@ -32,6 +32,98 @@ nav {
   display: none;
 }
 
+ul > li {
+  display: inline-block;
+  list-style: none;
+  padding: 3vh 6vw;
+}
+
+
+
+/* --- CONTACT  STYLING --- */
+
+/* CONTACT HEADER */
+.contact-header{
+  height: 70vh;
+  background-image: url("/img/man-baby.png");
+  background-repeat: no-repeat;
+  background-position: right 20px bottom;
+  background-size: 320px;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+}
+
+.contact-header h1{
+  font-size: 4rem;
+  font-weight: 700;
+}
+/* CONTACT NAVBAR*/
+.contact-nav{
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+}
+
+.contact-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 0;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+
+.contact-nav ul > li {
+width: 50vw;
+padding: 30px;
+margin: 0;
+}
+
+.contact-nav ul li a {
+  font-size: 0.9rem;
+}
+
+/* ---CONTACT FORM --- */
+#mind-form{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center;
+  padding: 40px;
+  max-width: 90vw;
+}
+
+#mind-form h2{
+  text-align: left;
+  font-size: 4rem;
+ 
+}
+
+#mind-form label{
+
+  padding-left: 10px;
+  color:rgba(255,255,255,0.9);
+  font-size: 1.3rem;
+  padding-bottom: 5px;
+}
+
+#mind-form input,
+#mind-form textarea{
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 1.2rem;
+}
+
+#mind-form button{
+  align-self: flex-end;
+  text-align: center;
+ height: 50px;
+
+}
+
 /*--CARDS DEFAULTS---*/
 .cards {
   display: flex;
@@ -300,12 +392,7 @@ img {
     justify-content: center;
   }
 
-  ul > li {
-    display: inline-block;
-    list-style: none;
-    padding: 3vh 6vw;
-  }
-
+ 
   /*-----MAIN CONTENT-----*/
   main {
     height: 180vh;
@@ -469,7 +556,10 @@ h2 {
 }
 
 p,
-a {
+a,
+label,
+input,
+textarea {
   font-family: "Fira Sans", sans-serif;
   font-size: 2.3vh;
 }
