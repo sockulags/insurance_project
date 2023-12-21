@@ -15,38 +15,46 @@
   </head>
   <body>
     <header class="contact-header bg-blue">
-      <h1>
-        Oh hello <br />
-        there!
-      </h1>
+      <h1>Oh hello there!</h1>
     </header>
     <nav class="contact-nav bg-white">
-      <ul>
-        <li><a href="/index.html">Home</a></li>
-        <li><a href="#/">Our Offer</a></li>
-        <li><a href="#/">Why us</a></li>
-        <li class="bg-light-gray">
-          <a class="active" href="/contact.html">Contact</a>
-        </li>
-      </ul>
+      <div class="contact-div">
+        <a href="/index.html">Home</a> <a class="offer" href="#/">Our Offer</a>
+      </div>
+      <div class="contact-div">
+        <a href="#/">Why us</a>
+        <a class="active" href="/contact.html">Contact</a>
+      </div>
     </nav>
-<section class="mind bg-gray">
-    <form id="mind-form">
-        <h2>Whats on your mind?</h2>
+    <nav class="desktop-contact-nav bg-white">
+      <div class="desktop-contact-div">
+        <a href="/index.html">Home</a> 
+        <a class="offer" href="#/">Our Offer</a>
+        <a href="#/">Why us</a>
+        <a class="active" href="/contact.html">Contact</a>
+      </div>
+    </nav>
+    <section class="mind bg-gray">
+        <form id="mind-form">
+          <h2>Whats on your mind?</h2>
         <label for="email">Your email</label>
-        <input type="email" id="email">
+        <input type="email" id="email" />
         <label id="current" for="message">Your message</label>
-        <textarea type="text" rows="6" id="message">Dear Insurance company...</textarea>
-        <button type="submit" form="mind-form" value="submit">SEND MESSAGE</button>
-    </form>
-</section>
-<section class="map" >
-    <article  class="invitation">
-<h2>Come visit us!</h2>
-<p>2219 Griffin Street</p>
-<p>San Fransisco</p>
-    </article>
-</section>
-<!-- <script src="liveserverhelp.js"></script> -->
+        <textarea type="text" rows="6" id="message">
+Dear Insurance company...</textarea
+        >
+        <button type="submit" form="mind-form" value="submit">
+          SEND MESSAGE
+        </button>
+      </form>
+    </section>
+    <section class="map">
+      <article class="invitation">
+        <h2>Come visit us!</h2>
+        <p>2219 Griffin Street</p>
+        <p>San Fransisco</p>
+      </article>
+    </section>
+    <!-- <script src="liveserverhelp.js"></script> -->
   </body>
 </html>
